@@ -6,18 +6,18 @@
 * El Schema Registry los esquemas se agrupan mediante Subjects; por defecto cada Subject tiene un esquema el cual está asociado a un tópico.
 * El nombre del subject debe ser 'topico'-value. 
 
-#Productor
+# Productor
 * Se obtiene el esquema desde Schema Registry.
 * Se serializa el objecto CalendarRecord de tipo GenericRecord pasandole el schema avro.
 * Se envia al tópico el evento serializado en avro.
 
-#Consumidor
+# Consumidor
 * Se obtiene el esquema desde Schema Registry.
 * Nos conectamos al tópico.
 * Consumimos los eventos deserializando el objecto CalendarRecord de tipo GenericRecord pasándole el schema avro.
 
 
-##Schema Registry con Docker
+## Schema Registry con Docker
 
 Accedemos a la url oficial :
 https://docs.confluent.io/current/quickstart/ce-docker-quickstart.html
