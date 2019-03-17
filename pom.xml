@@ -1,0 +1,61 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.pablo.kafka.avro.demo</groupId>
+    <artifactId>kafka-avro-demo</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0</version>
+
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <jdk.version>1.8</jdk.version>
+        <scala.version>2.11.8</scala.version>
+        <scala.short.version>2.11</scala.short.version>
+        <log4j.version>1.2.17</log4j.version>
+        <kafka.version>0.10</kafka.version>
+        <mockito-all.version>1.9.5</mockito-all.version>
+
+    </properties>
+
+
+        <dependencies>
+            <dependency>
+                <groupId>org.scala-lang</groupId>
+                <artifactId>scala-compiler</artifactId>
+                <version>${scala.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.scala-lang</groupId>
+                <artifactId>scala-library</artifactId>
+                <version>${scala.version}</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>io.confluent</groupId>
+                <artifactId>kafka-avro-serializer</artifactId>
+                <version>5.1.2</version>
+            </dependency>
+            <dependency>
+                <groupId>kafka-avro-confluent</groupId>
+                <artifactId>kafka-avro-confluent</artifactId>
+                <version>0.1.0</version>
+            </dependency>
+
+
+        </dependencies>
+
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.scala-tools</groupId>
+                <artifactId>maven-scala-plugin</artifactId>
+                <configuration>
+                    <scalaVersion>${scala.version}</scalaVersion>
+                </configuration>
+            </plugin>
+        </plugins>
+    </reporting>
+
+</project>
