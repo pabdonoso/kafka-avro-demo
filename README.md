@@ -2,7 +2,7 @@
 ##### Productor y Consumidor Kafka en formato AVRO, con validación en Schema Registry de Confluent.
 
 * Para utilizar Schema Registry de Confluent, se debe dar de alta el schema avro asociado al objeto JSON que se quiere enviar a Kafka.
-* El script 'curl-schema-avro' lanza una petición PSOT a schema Registry para que registre el esquema asociado al tópico.
+* El script 'curl-schema-avro' lanza una petición POST a schema Registry para que registre el esquema asociado al tópico.
 * El Schema Registry los esquemas se agrupan mediante Subjects; por defecto cada Subject tiene un esquema el cual está asociado a un tópico.
 * El nombre del subject debe ser 'topico'-value. 
 
@@ -43,7 +43,7 @@ Creating ksql-server     ... done
 Creating control-center  ... done                       
 Creating ksql-cli        ... done                      
 
------------
+
 ### Operaciones
 
 cd /cp-docker-images/examples/cp-all-in-one
