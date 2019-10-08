@@ -1,5 +1,4 @@
-package com.carrefour.bigdata.ingestion.avro
-
+package main.com.pablo.kafka.scala
 
 case class CalendarRecord (
 
