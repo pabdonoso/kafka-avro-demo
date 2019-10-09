@@ -29,7 +29,6 @@ class ConsumerKafkaAvroDeserializer(val topic:String, val kafkaServer:String, va
   props.put("consumer.timeout.ms", "120000")
   props.put("key.deserializer", classOf[StringDeserializer].getCanonicalName)
   props.put("value.deserializer",classOf[KafkaAvroDeserializer].getCanonicalName)
-  //props.put("auto.offset.reset", "earliest")
   props.put("auto.offset.reset", "latest")
   props.put("enable.auto.commit", false: java.lang.Boolean)
   props.put("schema.registry.url",schemaRegistryUrl)

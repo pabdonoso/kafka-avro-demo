@@ -14,19 +14,16 @@ class ProducerKafkaAvroSerializer(val topic:String, val kafka:String) {
 
   private val props = new Properties()
 
-  /*config.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, classOf[StringSerializer]);
-config.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, classOf[KafkaAvroSerializer]);*/
-
   props.put("bootstrap.servers", kafka)
   props.put("key.serializer", classOf[StringSerializer].getCanonicalName)
   props.put("value.serializer",classOf[KafkaAvroSerializer].getCanonicalName)
   props.put("client.id", UUID.randomUUID().toString())
 
   //Confluent Local - Docker
-  //val schemaRegistryUrl="http://localhost:8081"
+  val schemaRegistryUrl="http://localhost:8081"
 
-  //Confluent DESA
- val schemaRegistryUrl="http://ld6cf03.es.wcorp.carrefour.com:8081"
+
+
   props.put("schema.registry.url",schemaRegistryUrl)
   props.put("auto.register.schemas", (false: java.lang.Boolean))
 

@@ -10,17 +10,14 @@ import scala.io.Source
 object ProducerKafkaApp extends App {
 
   //Confluent Local - Docker
-  /*val kafkaConfluent="localhost:29092"
-  val topicStock="supply_bdsupply-stock-consolidado-sherpa_stockcons-sap-dl"*/
+  val kafkaConfluent="localhost:29092"
+  val topic="topic"
 
   val configPath = getClass.getClassLoader.getResource(".").getPath
 
-//DESA
 
-  val kafkaConfluent="ld6cf01.es.wcorp.carrefour.com:9092,ld6cf02.es.wcorp.carrefour.com:9092,ld6cf03.es.wcorp.carrefour.com:9092"
-  val topicStock="supply_bdsupply-stock-consolidado-sherpa_stockcons-sap-dl"
 
-  val producer = new ProducerKafkaAvroSerializer(topicStock,kafkaConfluent)
+  val producer = new ProducerKafkaAvroSerializer(topic,kafkaConfluent)
 
   producer.sendStock(createStockRecordFromFile)
   //producer.sendStock(createStockRecord)
@@ -61,6 +58,8 @@ object ProducerKafkaApp extends App {
 
       val events:List[String] = Source.fromFile(configPath+"store_stock_matrix.txt").getLines().toList
       //val events:List[String] = Source.fromFile(configPath+"10_events_store_stock_matrix.txt").getLines().toList
+      //val events:List[String] = Source.fromFile(configPath+"4_events_test.txt").getLines().toList
+
 
     events.foreach(x=>
       listaStock+=StockRecord(x.split(",")(0).toString,x.split(",")(1).toString,x.split(",")(2).toString,x.split(",")(3).toString,
