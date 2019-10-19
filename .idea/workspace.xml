@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dcf0d40a-17c4-424a-b493-6755d4065fe0" name="Default" comment="FEAT(kafka-avro-demo): clean code.">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/pablo/app/ConsumerKafkaApp.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/pablo/app/ProducerKafkaApp.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/pablo/records/Records.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/pablo/kafka/CalendarRecord.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/pablo/kafka/ConsumerKafkaAvroDeserializer.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/pablo/kafka/ConsumerKafkaAvroDeserializer.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/pablo/kafka/ProducerKafkaAvroSerializer.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/pablo/kafka/ProducerKafkaAvroSerializer.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/pablo/kafka/StockRecord.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/pablo/kafka/app/ConsumerKafkaApp.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/pablo/kafka/app/ProducerKafkaApp.scala" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/pablo/kafka/ProducerKafkaAvroSerializer.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="74" column="80" selection-start-line="74" selection-start-column="80" selection-end-line="74" selection-end-column="80" />
+              <folding>
+                <element signature="e#36#71#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/pablo/kafka/ConsumerKafkaAvroDeserializer.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-766">
+              <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+              <folding>
+                <element signature="e#36#78#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/pablo/app/ConsumerKafkaApp.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/pablo/app/ProducerKafkaApp.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/pablo/records/Records.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1547">
+              <caret line="130" column="2" selection-start-line="130" selection-start-column="2" selection-end-line="130" selection-end-column="2" />
+              <folding>
+                <element signature="e#28#57#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="748">
+                <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Scala Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>supply_bdsupply-stock-consolidado-sherpa_stockcons-sap-dl</find>
+      <find>topicCalendar</find>
+      <find>2019-05-30 00:00:00</find>
+      <find>ld6cf01.es.wcorp.carrefour.com:9092</find>
+      <find>Mapping record</find>
+      <find>carre</find>
+      <find>sendRecordList</find>
+      <find>sendCalendarRecordList</find>
+      <find>parseCalendarToConsume</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/com/pablo/kafka/StockRecord.scala" />
+        <option value="$PROJECT_DIR$/src/main/com/pablo/kafka/ConsumerKafkaAvroDeserializer.scala" />
+        <option value="$PROJECT_DIR$/src/main/com/pablo/kafka/app/ConsumerKafkaApp.scala" />
+        <option value="$PROJECT_DIR$/src/main/com/pablo/kafka/ProducerKafkaAvroSerializer.scala" />
+        <option value="$PROJECT_DIR$/src/main/com/pablo/kafka/app/ProducerKafkaApp.scala" />
+        <option value="$PROJECT_DIR$/src/main/com/pablo/kafka/scala/StockRecord.scala" />
+        <option value="$PROJECT_DIR$/src/main/resources/scriptFile.scala" />
+        <option value="$PROJECT_DIR$/src/main/resources/10_events_store_stock_matrix.txt" />
+        <option value="$PROJECT_DIR$/target/classes/10_events_store_stock_matrix.txt" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/pablo/kafka/bin/curl-schema-avro_stock-consolidado.sh" />
+        <option value="$PROJECT_DIR$/src/main/resources/store_stock_matrix.txt" />
+        <option value="$PROJECT_DIR$/src/main/resources/4_events_test.txt" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/pablo/kafka/app/ConsumerKafkaApp.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/pablo/kafka/app/ProducerKafkaApp.scala" />
+        <option value="$PROJECT_DIR$/target/classes/store_stock_matrix.txt" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/pablo/kafka/records/StockRecord.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/pablo/kafka/records/CalendarRecord.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/pablo/app/KafkaOperations.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/pablo/Utils.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/pablo/app/Records.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/pablo/records/Records.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/pablo/kafka/ProducerKafkaAvroSerializer.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/pablo/kafka/ConsumerKafkaAvroDeserializer.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/pablo/app/ProducerKafkaApp.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/pablo/app/ConsumerKafkaApp.scala" />
+        <option value="$PROJECT_DIR$/README.md" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="dedicatedModuleDir" value="$PROJECT_DIR$" />
+        <option name="importAutomatically" value="true" />
+        <option name="lookForNested" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1425" />
+    <option name="y" value="25" />
+    <option name="width" value="1861" />
+    <option name="height" value="1055" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="kafka-avro-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafka-avro-demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kafka-avro-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafka-avro-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kafka-avro-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafka-avro-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kafka-avro-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafka-avro-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kafka-avro-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafka-avro-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="pablo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kafka-avro-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafka-avro-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="pablo" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kafka-avro-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafka-avro-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="pablo" type="462c0819:PsiDirectoryNode" />
+              <item name="kafka" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kafka-avro-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kafka-avro-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="pablo" type="462c0819:PsiDirectoryNode" />
+              <item name="records" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/target/classes" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.6701031" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/target/classes" />
+      <recent name="$PROJECT_DIR$/target" />
+      <recent name="$PROJECT_DIR$/src/main/scala/com/pablo/kafka/bin" />
+      <recent name="$PROJECT_DIR$/src/main/com/pablo/kafka" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/target/classes" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.ProducerKafkaApp">
+    <configuration name="ConsumerKafkaApp" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="main.com.pablo.kafka.scala.app.ConsumerKafkaApp" />
+      <module name="kafka-avro-demo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.com.pablo.kafka.scala.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProducerKafkaApp" type="Application" factoryName="Application" temporary="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="main.com.pablo.kafka.scala.app.ProducerKafkaApp" />
+      <module name="kafka-avro-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.com.pablo.kafka.scala.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.ConsumerKafkaApp" />
+      <item itemvalue="Application.ProducerKafkaApp" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ProducerKafkaApp" />
+        <item itemvalue="Application.ConsumerKafkaApp" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$USER_HOME$/poc/links" value="PREVIEW" />
+        <entry key="$USER_HOME$/poc/spark-scala-tutorial" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../Kafka-Avro-scala" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../kafka-demo" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dcf0d40a-17c4-424a-b493-6755d4065fe0" name="Default" comment="" />
+      <created>1552849397623</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1552849397623</updated>
+    </task>
+    <task id="LOCAL-00001" summary="FEAT(kafka-avro-demo): Commit inicial.">
+      <created>1552849449462</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1552849449462</updated>
+    </task>
+    <task id="LOCAL-00002" summary="FEAT(kafka-avro-demo): Commit inicial.">
+      <created>1552849564443</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1552849564443</updated>
+    </task>
+    <task id="LOCAL-00003" summary="FEAT(kafka-avro-demo): Commit inicial.">
+      <created>1552849609827</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1552849609827</updated>
+    </task>
+    <task id="LOCAL-00004" summary="FEAT(kafka-avro-demo): Commit inicial.">
+      <created>1552849651472</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1552849651472</updated>
+    </task>
+    <task id="LOCAL-00005" summary="FEAT(kafka-avro-demo): Commit inicial.">
+      <created>1552849685291</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1552849685291</updated>
+    </task>
+    <task id="LOCAL-00006" summary="FEAT(kafka-avro-demo): Se sube version para Producir StockRecord para stockconsolidado. Se crea metodo que lee de fichero.">
+      <created>1570556055999</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1570556055999</updated>
+    </task>
+    <task id="LOCAL-00007" summary="FEAT(kafka-avro-demo): clean code.">
+      <created>1570608581578</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1570608581578</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1425" y="25" width="1861" height="1055" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27823693" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="DB Browser" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32963374" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.27272728" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39955604" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.21309656" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32852387" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4997245" visible="true" weight="0.26415095" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5002755" side_tool="true" weight="0.26415095" />
+      <window_info anchor="bottom" id="DB Execution Console" order="11" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24961832" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" weight="0.24107851" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven" order="8" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.275" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="DB Browser" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32963374" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.27272728" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39955604" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.21309656" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32852387" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.26415095" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="DB Execution Console" order="11" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24961832" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" weight="0.24107851" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven" order="8" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="FEAT(kafka-avro-demo): Commit inicial." />
+    <MESSAGE value="FEAT(kafka-avro-demo): Se sube version para Producir StockRecord para stockconsolidado. Se crea metodo que lee de fichero." />
+    <MESSAGE value="FEAT(kafka-avro-demo): clean code." />
+    <option name="LAST_COMMIT_MESSAGE" value="FEAT(kafka-avro-demo): clean code." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/com/pablo/kafka/scala/app/ProducerKafkaApp.scala</url>
+          <line>19</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/com/pablo/kafka/scala/app/ProducerKafkaApp.scala</url>
+          <line>18</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/com/pablo/kafka/scala/app/ProducerKafkaApp.scala</url>
+          <line>16</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/com/pablo/kafka/scala/app/ProducerKafkaApp.scala</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/com/pablo/kafka/scala/app/ProducerKafkaApp.scala</url>
+          <line>42</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/com/pablo/kafka/scala/ProducerKafkaAvroSerializer.scala</url>
+          <line>73</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/com/pablo/kafka/scala/ProducerKafkaAvroSerializer.scala</url>
+          <line>70</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="topic" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>listaStock</expression-string>
+        <language-id>Scala</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/com/pablo/kafka/CalendarRecord.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/com/pablo/kafka/StockRecord.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/com/pablo/kafka/scala/app/ConsumerKafkaApp.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/com/pablo/kafka/scala/app/ProducerKafkaApp.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/com/pablo/kafka/scala/bin/curl-schema-avro.sh" />
+    <entry file="file://$PROJECT_DIR$/src/main/com/pablo/kafka/scala/CalendarRecord.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/com/pablo/kafka/scala/ConsumerKafkaAvroDeserializer.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/com/pablo/kafka/scala/ProducerKafkaAvroSerializer.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/com/pablo/kafka/scala/StockRecord.scala" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/scriptFile.scala" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/10_events_store_stock_matrix.json" />
+    <entry file="jar://$MAVEN_REPOSITORY$/io/confluent/kafka-schema-registry-client/5.1.2/kafka-schema-registry-client-5.1.2.jar!/io/confluent/kafka/schemaregistry/client/SchemaMetadata.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/0.10.2.1/kafka-clients-0.10.2.1.jar!/org/apache/kafka/clients/producer/KafkaProducer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="189" column="34" selection-start-line="189" selection-start-column="34" selection-end-line="189" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/pablo/kafka/bin/curl-schema-avro_stock-consolidado.sh" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/10_events_store_stock_matrix.txt" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/0.10.2.1/kafka-clients-0.10.2.1.jar!/org/apache/kafka/clients/producer/ProducerRecord.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/store_stock_matrix.txt" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/pablo/kafka/bin/curl-schema-avro_calendarios.sh" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/4_events_test.txt" />
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/pablo/kafka/app/ConsumerKafkaApp.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/pablo/kafka/StockRecord.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/10_events_store_stock_matrix.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/pablo/kafka/CalendarRecord.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/store_stock_matrix.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2532269">
+          <caret line="148957" column="35" selection-start-line="148957" selection-start-column="35" selection-end-line="148957" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/4_events_test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/pablo/kafka/app/ProducerKafkaApp.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="27" column="68" lean-forward="true" selection-start-line="27" selection-start-column="68" selection-end-line="27" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/pablo/kafka/records/CalendarRecord.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/pablo/kafka/records/StockRecord.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/pablo/app/KafkaOperations.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/pablo/records/StockRecord.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/pablo/records/CalendarRecord.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/pablo/Utils.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="e#19#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/pablo/app/ConsumerKafkaApp.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/pablo/app/ProducerKafkaApp.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/pablo/kafka/ConsumerKafkaAvroDeserializer.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-766">
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+          <folding>
+            <element signature="e#36#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/pablo/kafka/ProducerKafkaAvroSerializer.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="74" column="80" selection-start-line="74" selection-start-column="80" selection-end-line="74" selection-end-column="80" />
+          <folding>
+            <element signature="e#36#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/pablo/records/Records.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1547">
+          <caret line="130" column="2" selection-start-line="130" selection-start-column="2" selection-end-line="130" selection-end-column="2" />
+          <folding>
+            <element signature="e#28#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="748">
+            <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>scala-sdk-2.11.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.6701031" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.6701031" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>kafka-avro-demo</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.6701031" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: cheshire:cheshire:5.7.1</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.6701031" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

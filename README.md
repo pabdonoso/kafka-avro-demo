@@ -44,7 +44,7 @@ Creating control-center  ... done
 Creating ksql-cli        ... done                      
 
 
-#### Operaciones
+#### Operaciones Docker
 
 cd /cp-docker-images/examples/cp-all-in-one
 
